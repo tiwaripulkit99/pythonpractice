@@ -4,9 +4,7 @@
 name(print) """
 #now see what is decorating
 def dec():
-    def nowexe():
-        b= 5+6
-        return nowexe
-    print(nowexe())
-
-dec()
+    def inner():
+        return 4+5
+    return inner
+print(dec)
