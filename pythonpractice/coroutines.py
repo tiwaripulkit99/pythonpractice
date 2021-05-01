@@ -1,4 +1,4 @@
-def searcher():
+"""def searcher():
     import time
     book="this book belongs to pulkit and john"
     time.sleep(4)
@@ -19,4 +19,5 @@ search.send("pulkit and")
 input("press key")
 search.send("pulkit and john")
 
+"""
 

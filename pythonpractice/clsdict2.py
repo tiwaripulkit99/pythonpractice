@@ -1,4 +1,4 @@
-'''name={"pulkit","abhinav","mohi"}
+name={"pulkit","abhinav","mohi"}
 sirname={"tiwari","gupta","chaudhary"}
 dict=dict(zip(name,sirname))
-print(dict)'''
+print(dict)

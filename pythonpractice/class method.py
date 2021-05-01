@@ -7,4 +7,4 @@ class student:
 pulkit=student()
 print(pulkit.marks)
 pulkit.nooofstu(1000)
-print(student.marks)
+print(pulkit.marks)

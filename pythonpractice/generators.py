@@ -8,16 +8,11 @@ fn=top10()
 print(fn)
 for  i in fn:
     print(i)"""
-"""def gen(n):
+""" def gen(n):
     for i in range(n):
         yield i
 ob=gen(10)
 print(ob)
 
 for i in ob:
-    print(i)"""
-
-
-
-
-
+    # print(i)"""

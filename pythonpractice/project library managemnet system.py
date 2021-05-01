@@ -4,7 +4,7 @@ class library:
         self.booklist=booklist
         self.lenddict={}
     def displaybook(self):
-        print(f"We have follwing books in our library:{self.name}")
+        print(f"We have following books in our library:{self.name}")
         for book in self.booklist:
             print(book)
     def lendbook(self,user,book):
@@ -18,13 +18,11 @@ class library:
         print("Book has been added to booklist")
     def returnbook(self,book):
         self.lenddict.pop(book)
-
-
 if __name__ == '__main__':
         pulkit=library(["python","richdaddypoordaddy","harrypotter","c++","algo"],"Codewithpulkit")
 
         while(True):
-            print(f"welcome to the {pulkit.name} library.Enter your choice to continue")
+            print(f"Welcome to the {pulkit.name} library.Enter your choice to continue")
             print("1.DisplayBooks")
             print("2.lend a Book")
             print("3.Add a Book")
@@ -33,16 +31,16 @@ if __name__ == '__main__':
             if userchoice==1:
                 pulkit.displaybook()
             elif userchoice==2:
-                book=input("enter the Bookname you want to lend")
-                user=input("enter your Name")
+                book=input("Enter the Bookname you want to lend")
+                user=input("Enter your Name")
                 pulkit.lendbook(user,book)
             elif userchoice == 3:
-                book=input("enter the Bookname you want to add")
+                book=input("Enter the Bookname you want to add")
                 pulkit.addbook(book)
             elif userchoice == 4:
-                book = input("enter the Bookname you want to return")
-                if book in pulkit.booklist:
-                    print("its already in our library!Give a valid book!")
+                book = input("Enter the Bookname you want to return")
+                if book not in pulkit.lenddict:
+                    print("It's already in our library!Give a valid book!")
                 else:pulkit.returnbook(book)
             else:
                 print("Please select a valid option!")
